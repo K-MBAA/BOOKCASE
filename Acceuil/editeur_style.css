@@ -1,0 +1,86 @@
+html,body{
+  margin:0;
+  padding:0;
+  width:100%;
+  height:100%;
+  background-color : #d1e0e0 ;
+  
+}
+#ma_entete{
+  margin:0;
+  width:100%;
+  height:50%;
+  position:relative;
+  overflow:hidden;
+  background-color:transparent;
+  z-index: 1;
+}
+  .imagentete{
+        left:0;
+        width: 100%;
+        height:100%;
+        position:absolute;
+        object-position: center;
+        object-fit: cover;
+        z-index:0;
+}
+  .nomsite{
+  font-size: 60px;
+  text-align: center;
+  margin:0;
+  padding-top:5%;
+  color:white;
+  position:relative;
+  font-family:Verdana;
+  z-index:2;
+
+
+}
+#form{
+  text-align: center;
+  position:relative;
+  margin-left: auto;margin-right: auto;
+  width: 80,5%;
+  height: 5%;
+  padding:6%;
+
+}
+a{
+  text-decoration: none;
+}
+#form .login{
+  opacity:0.8;
+  color:black;
+  padding:20px 60px;
+  margin:8px 0;
+  border:none;
+  cursor:pointer;
+  width:15%;
+  right:0;
+  position:relative;
+  background-color: #ff8080;
+  font-family: Verdana;
+}
+#form .login:hover{
+  opacity:1;
+  background-color: white;
+  border:none;
+}
+#form .inscrip{
+  opacity:0.8;
+  color:black;
+  padding:20px 60px;
+  margin:8px 0;
+  border:none;
+  cursor:pointer;
+  width:15%;
+  right:0;
+  position:relative;
+  background-color:#809fff ;
+  font-family: Verdana;
+}
+#form .inscrip:hover{
+  opacity:1;
+  background-color: white;
+  border:none;
+}
