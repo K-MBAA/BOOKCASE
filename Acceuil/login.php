@@ -7,7 +7,16 @@ require_once('Connection.php');
 	<meta http-equiv="Content-Type" charset="utf-8">
 	<title>login</title>
 	<link rel="stylesheet" type="text/css" href="style_login.css">
+	<script>
+        function userLogin () {
+       console.log("it worked");
+       FB.getLoginStatus(function(response) {
+           statusChangeCallback(response);
 
+       });
+
+}  
+	</script>
 </head>
 <body>
     <style>
@@ -26,6 +35,13 @@ require_once('Connection.php');
                 <input type="password" placeholder="Entrer le mot de passe" name="password" required>
 
                 <input type="submit" id='submit' value='LOGIN' name="btlogin" >
+		<div id="fb-root"></div>
+                 <script src="login.js" type="text/javascript"></script>
+		    <div class="btnfb">
+                <fb:btnfb scope="public_profile,email" onlogin="userLogin();">
+                </fb:btnfb>
+
+     </div>
                 <?php
                 if(isset($_POST['btlogin']))
                 {
